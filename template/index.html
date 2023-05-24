@@ -1,0 +1,39 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/template/style.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII-ART-WEB</title>
+</head>
+<body>
+    <div class="typing">
+        <div class="typing-effect">
+    ASCII ART WEB 
+        </div>
+    </div>
+    <form action="/ascii-art" method="POST" class="input1">
+        <div>        <textarea name="text" id="" cols="30" rows="5" placeholder="Input your text here"></textarea>
+        </div>
+        <div class="select">
+            <select name="style" >
+                <option name="style" value="shadow.txt">Shadow</option>
+                <option name="style" value="standard.txt">Standard</option>
+                <option name="style" value="thinkertoy.txt">Thinkertoy</option>  
+
+                    <input type="submit" value="Get result">   
+
+            </select>
+        </div>
+      
+        <!-- <button name="style" value="shadow.txt">shadow</button>
+        <button name="style" value="standard.txt">standard</button>
+        <button name="style" value="thinkertoy.txt">thinkertoy</button> -->
+        
+    </form>
+    <pre class="output1">{{ .Result }}</pre>
+</body>
+</html>
+{{end}}

@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+p {
+   align-items: center;
+   font-family: monospace;
+   font-size: 2em;
+  word-break: break-word;
+}
+textarea{
+ resize:none;
+}
+body {
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  background-attachment:fixed;
+  background-origin:inital;
+  background-repeat:no repeat;
+  height:100%;
+  /* background-color: #8EC5FC; */
+  background-image: linear-gradient(to bottom, #8EC5FC , #E0C3FC );
+
+
+}
+textarea, input, select{
+  /* background-color: #8EC5FC; */
+  background-image: linear-gradient( to bottom,  #8EC5FC , #E0C3FC);
+  font-size: 20px;
+  padding: 2px;
+}
+
+img{
+ opacity: 0.5;
+ height: 200px;
+ width: 200px;
+
+}
+
+.ascii {
+  border: 5x solid #FFF0;
+  text-align: center;
+  overflow: hidden;
+ text-overflow: ellipsis;
+ display: -webkit-box;
+ -webkit-line-clamp: 1;
+         line-clamp: 1; 
+ -webkit-box-orient: vertical;
+}
+.input1 {
+  align-items: center;
+  justify-content: center;
+  size: .8ch;
+  font-family: monospace;
+  font-size: 2em;
+
+}
+.output1 {
+  /* border: 1px solid black; */
+  align-items: center;
+  justify-content: center;
+  size: 20ch;
+  overflow: scroll;
+}
+
+
+
+.typing {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-effect {
+  width: 14ch;
+  animation: typing 2s steps(22), effect .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(51, 162, 247); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffb6ed; 
+}
+
+
+
+/* select */
+
+
+.select {
+  position: relative
+}
+
+select {
+ /* Reset Select */
+ appearance: none;
+ outline: 10;
+ border: 10;
+ box-shadow: 10;
+ /* Personalize */
+ flex: 4;
+ padding: 0 1em;
+ color: rgb(0, 0, 0);
+ background-color: #8EC5FC;
+ background-image: none;
+ cursor: pointer;
+ font-family: monospace;
+  margin: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border-style: ridge;
+}
+input{
+ font-family: monospace;
+ margin: 10px;
+ padding: 8px;
+ font-size: 16px;
+ border-style: ridge;
+}
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 480px) {
+ img{
+   opacity: 0.5;
+   height: 50px;
+   width: 50px;
+ 
+ }
+ textarea, input, select{
+   /* background-color: #8EC5FC; */
+   background-image: linear-gradient( to bottom,  #8EC5FC , #E0C3FC);
+   font-size: 10px;
+   padding: 1px;
+}
+
+.typing {
+ height: 7vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.typing-effect {
+ width: 14ch;
+ animation: typing 2s steps(22), effect .5s step-end infinite alternate;
+ white-space: nowrap;
+ overflow: hidden;
+ border-right: 3px solid;
+ font-family: monospace;
+ font-size: 1.5em;
+}
+pre {
+ font-size:0.4em
+}
+html, body {
+ height: 80%;
+}
+
+html {
+ display: table;
+ margin: auto;
+}
+
+body {
+ display: table-cell;
+ vertical-align: middle;
+}
+
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+ width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: rgb(51, 162, 247); 
+ border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #ffb6ed; 
+}
+
+
+
+}
